@@ -1,23 +1,24 @@
-import logo from './logo.svg';
 import './App.css';
 
-function App() {
+function App({ suffix }) {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <p>Modern Testing</p>
+      <button>Button</button>
+      <button>Button1</button>
+      <label htmlFor="user-name">Mylabel</label>
+      <input type="text" id="user-name" />
+      <input type="text" placeholder="Hallo" />
+      <input type="text" value="Modern Testing" />
+      <img src="#" alt="MyTest" />
+      <h1 title="mytest">My Test</h1>
+      <div data-testid="myTestId">MyTestId</div>
+      <ul>
+        <li>product1</li>
+        <li>product2</li>
+        <li>product3</li>
+      </ul>
+      {suffix ? suffix : 'Suffix yoxdur'}
     </div>
   );
 }
